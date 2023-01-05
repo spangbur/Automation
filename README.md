@@ -1,2 +1,2 @@
-# Automation
-Used for lab testing
+# ongoing
+Used for ongoing configuration of prod servers
