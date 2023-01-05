@@ -1,3 +1,2 @@
-#Automation
-
-This branch is used to store files for initial server deployment
+# Ongoing
+This branch is used to keep production configuration current
