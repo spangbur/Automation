@@ -1,0 +1,40 @@
+# CentOs:
+
+Create Account and provide sudo access
+Correct screen resolution if require
+
+# Base:
+sudo dnf update
+sudo yum install epel-release
+sudo yum install ansible
+Create working directory, i.e. Ansible
+Create project sub directories, i.e. Production, Dev, Buf_Fix etc..
+
+# Update Pyton:
+if required
+
+# VMware SDK https://www.youtube.com/watch?v=NqSk6gqk_Ys
+In the working sub directory git colne https://github.com/vmware/vsphere-automation-sdk-python
+python3 -m venv Prod_Virtual (Virtual environment directory)
+source Prod_virtual/bin/activate
+cd ../../Prod_virtual/vsphere-automation-sdk-python
+
+# Installs pre-reqs for SDK
+pip3 install -r requirements.txt --extra-index-url file://'pwd'/lib
+
+# Update Python Path:
+export PYTHONPATH=${PWD}:$PYTHONPATH
+
+# Update configuration of SDK in the working directory of the virtual environment:
+vi samples/vsphere/vcenter/setup/testbed.py
+
+# Create a VM (in you working sub dir and virtual environment)
+python samples/vsphere/vcenter/vm/create/create_default_vm.py -v
+
+
+  
+
+
+
+
+
